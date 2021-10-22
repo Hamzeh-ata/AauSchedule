@@ -35,6 +35,9 @@ input[type=text] {
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
   }
+  input:focus {
+    outline: none !important;
+}
   .btn{
       width: 200px;
       background-color: #373757 !important;
