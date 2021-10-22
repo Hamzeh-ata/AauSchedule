@@ -34,6 +34,8 @@ input[type=text] {
     background-position: 10px 10px; 
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
+    outline: none !important;
+
   }
   input:focus {
     outline: none !important;
@@ -54,6 +56,8 @@ input[type=text] {
       background-color: #e9edf0;
       font-size: 17px;
       font-family: 'Heebo', sans-serif;
+      outline: none !important;
+
   }
   .uni_days{
       width: 220px;
@@ -64,15 +68,21 @@ input[type=text] {
     background-color: #e9edf0;
     font-size: 18px;
     font-family: 'Heebo', sans-serif;
+    outline: none !important;
+
       }
 
 
      .uni_Number:focus {
         box-shadow: inset 0 1px 1px rgba(139, 37, 37, 0.075), 0 0 8px rgba(48, 146, 238, 0.6) !important;
+        outline: none !important;
+
       }
 
       .uni_days:focus {
         box-shadow: inset 0 1px 1px rgba(139, 37, 37, 0.075), 0 0 8px rgba(48, 146, 238, 0.6) !important;
+        outline: none !important;
+
       }
 
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
