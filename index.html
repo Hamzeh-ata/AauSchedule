@@ -1,0 +1,196 @@
+<html>
+<head>
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./index.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid h-100 ">
+        <div class="container secition1 pb-2 h-100 justify-content-center">
+            <div class="row  h-100 justify-content-center" id="row">
+                <div class="col-12 align-self-center justify-content-center ">
+                    <div class="main-div text-center pt-1 mt-1">
+
+                    <h1 class="title">برنامج حضور الطالب في الحرم حسب الرقم الجامعي</h1>
+                    <div class="input-div mt-5">
+                        <div class="row justify-content-center">
+                            <div class="uni_input m-2">
+                                 <select class="uni_days text-center  " id="days"  > 
+                                    <option selected disabled hidden> ايام الدوام</option>
+                                    <option value="1">سبت- احد - ثلاثاء</option>
+                                    <option value="2">سبت -اثنين - اربعاء</option>
+                                    <option value="3">احد - ثلاثاء</option>
+                                    <option value="4">اثنين - اربعاء</option>
+                                 </select>        
+                            </div>
+                            <div class="days_input m-2" >
+                                <input class="text-center uni_Number" placeholder="الرقم الجامعي" type="number" id="uni_Number" >
+                            </div>
+                        </div>
+                            </div>
+                      
+                    <button type="button" class="btn btn-secondary mt-5" id="btn" >اظهار الجدول</button>          
+                  </div>
+                  <div class="table_div border rounded shadow-sm   mb-lg-10 bg-white mt-5 mb-2"id="cont2" style="border-color: whitesmoke !important; background-color: #353c4e !important; display: none;" >
+                      <div id="table" class="input my-auto" >
+                      <table id="table1" class="FrontPage input" cellspacing="0" cellpadding="0">
+                          <colgroup id="col"><col  width="2%">
+                              <col width="30%">
+                              <col width="30%">
+                              <col width="30%">
+                          </colgroup>
+                  <tbody id="bod">
+                     <tr">
+                         <th></th>
+                         <th valign="bottom">الاسبوع</th>
+                         <th valign="bottom">اليوم</th>
+                         <th valign="bottom">التاريخ</th>
+                     </tr>
+                    <tr><td >1</td>
+                           <td allign="center">   اسبوع 1  </td>  
+                           <td id="20" class="d">   
+                                الاثنين                  
+                          </td>  
+                           <td id="1">   12/2/2021  </td>  
+                            </tr>
+                            <tr class="color-change"><td allign="center">2</td>
+                              <td>   اسبوع 2  </td>  
+                              <td id="21" class="d">   
+                                   الاثنين               
+                                           
+                             </td>  
+                              <td id="2">   12/2/2021  </td>  
+                               </tr>
+                               <tr><td allign="center">3</td>
+                                <td>   اسبوع 3  </td>  
+                                <td id="22" class="d">   
+                                     الاثنين               
+                                 </select>              
+                               </td>  
+                                <td id="3">   12/2/2021  </td>  
+                                 </tr>
+                                 <tr><td allign="center">4</td>
+                                  <td>   اسبوع 4  </td>  
+                                  <td id="23" class="d">   
+                                       الاثنين               
+                                   </select>              
+                                 </td>  
+                                  <td id="4">   12/2/2021  </td>  
+                                   </tr>
+                                   <tr><td allign="center">5</td>
+                                    <td>   اسبوع 5  </td>  
+                                    <td id="24" class="td">   
+                                         الاثنين               
+                                     </select>              
+                                   </td>  
+                                    <td id="5">   12/2/2021  </td>  
+                                     </tr>
+                                     <tr><td allign="center">6</td>
+                                      <td>   اسبوع 6  </td>  
+                                      <td id="25" class="d">   
+                                           الاثنين               
+                                     </td>  
+                                      <td id="6">   12/2/2021  </td>  
+                                       </tr>
+                                       <tr><td allign="center">7</td>
+                                        <td>   اسبوع 7  </td>  
+                                        <td id="26" class="d">   
+                                             الاثنين               
+                                              
+                                       </td>  
+                                        <td id="7">   12/2/2021  </td>  
+                                         </tr>
+                                         <tr><td allign="center">8</td>
+                                          <td >   اسبوع 8  </td>  
+                                          <td id="27">   
+                                               الاثنين               
+                                         
+                                         </td>  
+                                          <td id="8">   12/2/2021  </td>  
+                                           </tr>
+                                           <tr><td allign="center">9</td>
+                                            <td >   اسبوع 9  </td>  
+                                            <td id="28">   
+                                                 الاثنين               
+                                                     
+                                           </td>  
+                                            <td id="9">   12/2/2021  </td>  
+                                             </tr>
+                                             <tr><td allign="center">10</td>
+                                              <td >   اسبوع 10  </td>  
+                                              <td id="29">   
+                                                   الاثنين               
+                                                           
+                                             </td>  
+                                              <td id="10">   12/2/2021  </td>  
+                                               </tr>
+                                               <tr><td allign="center">11</td>
+                                                <td>   اسبوع 11  </td>  
+                                                <td id="30">   
+                                                     الاثنين               
+                                                          
+                                               </td>  
+                                                <td id="11">   12/2/2021  </td>  
+                                                 </tr>
+                                                 <tr><td allign="center">12</td>
+                                                  <td>   اسبوع 12  </td>  
+                                                  <td id="31">   
+                                                       الاثنين               
+                                                                
+                                                 </td>  
+                                                  <td id="12">   12/2/2021  </td>  
+                                                   </tr>
+                                                   <tr><td allign="center">13</td>
+                                                    <td>   اسبوع 13  </td>  
+                                                    <td id="32">   
+                                                         الاثنين               
+                                                     </select>              
+                                                   </td>  
+                                                    <td id="13">   12/2/2021  </td>  
+                                                     </tr>
+                                                     <tr><td allign="center">14</td>
+                                                      <td >   اسبوع 14  </td>  
+                                                      <td id="33">   
+                                                           الاثنين               
+                                                       </select>              
+                                                     </td>  
+                                                      <td id="14">   12/2/2021  </td>  
+                                                       </tr>
+              
+                                                       <tr><td allign="center">15</td>
+                                                        <td >   اسبوع 15  </td>  
+                                                        <td id="34">   
+                                                             الاثنين               
+                                                         </select>              
+                                                       </td>  
+                                                        <td id="15">   12/2/2021  </td>  
+                                                         </tr>
+              
+                                                  
+                                                           </tr>
+                                             
+                                                                                                                                                                                   
+                          </tr>  
+              
+              
+              
+              
+              
+              
+                  </tbody>
+                      </table>
+            
+
+            </div>
+        </div>
+    </div>
+     
+    </div>
+
+
+
+    <script src="index.js"></script> 
+
+</body>
+</HTML>
