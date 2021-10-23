@@ -4,6 +4,11 @@ var downloadBtn=document.getElementById("btn1");
 var DateIdValue=1;
 var daysIdValue=20;
 var downloaddVar=0;
+var checkVar=0;
+var checkVar1=0;
+var checkVa1r=0;
+
+var input=document.getElementById("uni_Number");
 //const dayNames = ["احد", "اثنين", "ثلاثاء", "اربعاء",  "سبت"];
 const dayNames=[];
 dayNames[6]="سبت";
@@ -33,7 +38,6 @@ var data = [
 const getDaysOfWeekBetweenDates = (sDate ,eDate) => {
 var inputValue=document.getElementById("uni_Number").value;
 var daysValue=document.getElementById("days").value;
-input1=document.getElementById("uni_Number").value;
 
 var toText = inputValue.toString(); 
 var lastChar = toText.slice(-1); 
@@ -64,9 +68,9 @@ DateIdValue++;
 if(daysIdValue>=35 && DateIdValue>=16){
   daysIdValue=20;
   DateIdValue=1;
+
 }
 downloaddVar=11;
-
 }
   //sbt-a7d-thlatha zoji
 
@@ -82,6 +86,7 @@ document.getElementById(DateIdValue).innerHTML=allYear[1] + '-' + allYear[0];
   if(daysIdValue>=35 && DateIdValue>=16){
   daysIdValue=20;
   DateIdValue=1;
+
   }
   downloaddVar=12;
 
@@ -100,8 +105,10 @@ document.getElementById(DateIdValue).innerHTML=allYear[1] + '-' + allYear[0];
     if(daysIdValue>=35 && DateIdValue>=16){
       daysIdValue=20;
       DateIdValue=1;
+
     }
     downloaddVar=21;
+
     }
   //sbt athnen arb3a zoji
 
@@ -120,6 +127,7 @@ document.getElementById(DateIdValue).innerHTML=allYear[1] + '-' + allYear[0];
       if(daysValue>=35 && DateIdValue>=16){
         daysIdValue=20;
         DateIdValue=1;
+
       }
       downloaddVar=22;
 
@@ -138,6 +146,7 @@ document.getElementById(DateIdValue).innerHTML=allYear[1] + '-' + allYear[0];
     if(daysIdValue>=35 && DateIdValue>=16){
       daysIdValue=20;
       DateIdValue=1;
+
     }
     downloaddVar=31;
 
@@ -156,6 +165,7 @@ document.getElementById(DateIdValue).innerHTML=allYear[1] + '-' + allYear[0];
     if(daysIdValue>=35 && DateIdValue>=16){
       daysIdValue=20;
       DateIdValue=1;
+
     }
     downloaddVar=32;
 
@@ -173,6 +183,7 @@ document.getElementById(DateIdValue).innerHTML=allYear[1] + '-' + allYear[0];
     if(daysIdValue>=35 && DateIdValue>=16){
       daysIdValue=20;
       DateIdValue=1;
+
     }
     downloaddVar=41;
 
@@ -199,7 +210,19 @@ downloaddVar=42;
   if(daysIdValue>=35 && DateIdValue>=16){
     daysIdValue=20;
     DateIdValue=1;
+
   }
+
+
+if(inputValue.length!=0 && daysValue>=1){
+  checkVar1=1;
+}
+else if (inputValue.length==0 ||daysValue<=1){
+  checkVar1=0;
+
+}
+
+
 
 };
 function getInputValue(){
@@ -212,8 +235,11 @@ data.forEach(function(entry) {
 });
 }
 button.onclick=function(){
-  getInputValue();
-  show(); 
+    getInputValue();
+    show(); 
+ 
+ 
+ 
 };
 
 function check(){
@@ -230,10 +256,19 @@ function show(){
    
      // input.setCustomValidity('يجب ادخال رقم');
       //input.reportValidity();  
+
+      if(checkVar1==0){
+        input.setCustomValidity('يجب ادخال رقم');
+       input.reportValidity(); 
+      }
+     else if(checkVar1>0){
+
       document.getElementById('cont2').style.display="block"
       downloadBtn.style.display="block"
-    
-  }
+    }
+    console.log(checkVar1);
+ }
+  
 
 downloadBtn.onclick=function(){
   //sbt a7d thltha frdi

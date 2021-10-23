@@ -60,8 +60,8 @@ input[type=text] {
 
   }
   .uni_days{
-      width: 220px;
-      height: 35px;
+    width: 220px;
+    height: 35px;
     padding: 2px;
     border-radius: 7px;
     color: #1b1d2c;
@@ -69,7 +69,10 @@ input[type=text] {
     font-size: 18px;
     font-family: 'Heebo', sans-serif;
     outline: none !important;
-
+    text-align-last: center; text-align: center;
+    -ms-text-align-last: center;
+    -moz-text-align-last: center; 
+    text-align-last: center;
       }
       textarea, select, input, button { outline: none; }
 
