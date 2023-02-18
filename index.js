@@ -9,7 +9,7 @@ var checkVar1=0;
 var checkVa1r=0;
 
 var input=document.getElementById("uni_Number");
-//const dayNames = ["احد", "اثنين", "ثلاثاء", "اربعاء",  "سبت"];
+
 const dayNames=[];
 dayNames[6]="سبت";
 dayNames[0]="احد";
@@ -18,23 +18,6 @@ dayNames[2]="ثلاثاء";
 dayNames[3]="اربعاء";
 dayNames[4]="خميس";
 dayNames[5]="جمعة";
-var data = [
-  {a: '2021-10-16', b: '2021-10-20'},
-  {a: '2021-10-23', b: '2021-10-27'},
-  {a:'2021-10-30', b:'2021-11-3'},
-  {a:'2021-11-6', b:'2021-11-10'},
-  {a:'2021-11-13', b:'2021-11-17'},
-  {a:'2021-11-20', b:'2021-11-24'},
-  {a:'2021-11-27', b:'2021-12-1'},
-  {a:'2021-12-4', b:'2021-12-8'},
-  {a:'2021-12-11', b:'2021-12-15'},
-  {a:'2021-12-18', b:'2021-12-22'},
-  {a:'2021-12-25', b:'2021-12-29'},
-  {a:'2022-1-1', b:'2022-1-5'},
-  {a:'2022-1-8', b:'2022-1-12'},
-  {a:'2022-1-15', b:'2022-1-19'},
-  {a:'2022-1-22', b:'2022-1-26'}
-];
 const getDaysOfWeekBetweenDates = (sDate ,eDate) => {
 var inputValue=document.getElementById("uni_Number").value;
 var daysValue=document.getElementById("days").value;
@@ -170,7 +153,7 @@ document.getElementById(DateIdValue).innerHTML=allYear[1] + '-' + allYear[0];
     downloaddVar=32;
 
   }
-  //thnen arb3a frdi
+  
   else if(daysValue==4 && isOdd(lastDigit)){
     document.getElementById(daysIdValue).innerHTML=daysOfWeek[2];
     document.getElementById(DateIdValue).innerHTML=allYear[2];
@@ -227,24 +210,14 @@ else if (inputValue.length==0 ||daysValue<=1){
 };
 function getInputValue(){
 data.forEach(function(entry) {
-
-
-
- 
   getDaysOfWeekBetweenDates(entry.a,entry.b);
 });
 }
 button.onclick=function(){
     getInputValue();
     show(); 
- 
- 
- 
 };
 
-function check(){
-
-}
 //display: none;
 function isEven(n) {
   return n % 2 == 0;
@@ -253,10 +226,8 @@ function isOdd(n) {
   return n % 2 == 1;
 }
 function show(){
-   
      // input.setCustomValidity('يجب ادخال رقم');
       //input.reportValidity();  
-
       if(checkVar1==0){
         input.setCustomValidity('يجب ادخال رقم');
        input.reportValidity(); 
